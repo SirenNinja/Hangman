@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="522.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.tea.hangman.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane fx:id="gamePane" prefHeight="353.0" prefWidth="522.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#424242" height="366.0" layoutX="-8.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="545.0" />
+            <Label fx:id="winsLabel" layoutX="14.0" layoutY="14.0" text="Wins: 0 / 0" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="triesLeft" layoutX="333.0" layoutY="14.0" text="Tries left: 10 / 10" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="304.0" text="Letters used:" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentWord" layoutX="220.0" layoutY="124.0" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="124.0" text="Word: " textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <JFXProgressBar fx:id="triesLeftProgressbar" layoutX="331.0" layoutY="48.0" prefHeight="1.0" prefWidth="176.0" progress="1.0" />
+            <JFXButton fx:id="button" cacheShape="false" focusTraversable="false" layoutX="62.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="A" textFill="WHITE" />
+            <JFXButton fx:id="button1" cacheShape="false" focusTraversable="false" layoutX="93.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="B" textFill="WHITE" />
+            <JFXButton fx:id="button2" cacheShape="false" focusTraversable="false" layoutX="123.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="C" textFill="WHITE" />
+            <JFXButton fx:id="button11" cacheShape="false" focusTraversable="false" layoutX="402.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="L" textFill="WHITE" />
+            <JFXButton fx:id="button21" cacheShape="false" focusTraversable="false" layoutX="371.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="K" textFill="WHITE" />
+            <JFXButton fx:id="button111" cacheShape="false" focusTraversable="false" layoutX="309.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="I" textFill="WHITE" />
+            <JFXButton fx:id="button211" cacheShape="false" focusTraversable="false" layoutX="247.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="G" textFill="WHITE" />
+            <JFXButton fx:id="button1111" cacheShape="false" focusTraversable="false" layoutX="154.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="D" textFill="WHITE" />
+            <JFXButton fx:id="button2111" cacheShape="false" focusTraversable="false" layoutX="185.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="E" textFill="WHITE" />
+            <JFXButton fx:id="button11111" cacheShape="false" focusTraversable="false" layoutX="340.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="J" textFill="WHITE" />
+            <JFXButton fx:id="button21111" cacheShape="false" focusTraversable="false" layoutX="278.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="H" textFill="WHITE" />
+            <JFXButton fx:id="button111111" cacheShape="false" focusTraversable="false" layoutX="216.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="F" textFill="WHITE" />
+            <JFXButton fx:id="button3" cacheShape="false" focusTraversable="false" layoutX="62.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="N" textFill="WHITE" />
+            <JFXButton fx:id="button12" cacheShape="false" focusTraversable="false" layoutX="93.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="O" textFill="WHITE" />
+            <JFXButton fx:id="button22" cacheShape="false" focusTraversable="false" layoutX="123.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="P" textFill="WHITE" />
+            <JFXButton fx:id="button112" cacheShape="false" focusTraversable="false" layoutX="402.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="Y" textFill="WHITE" />
+            <JFXButton fx:id="button212" cacheShape="false" focusTraversable="false" layoutX="371.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="X" textFill="WHITE" />
+            <JFXButton fx:id="button1112" cacheShape="false" focusTraversable="false" layoutX="309.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="V" textFill="WHITE" />
+            <JFXButton fx:id="button2112" cacheShape="false" focusTraversable="false" layoutX="247.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="T" textFill="WHITE" />
+            <JFXButton fx:id="button11112" cacheShape="false" focusTraversable="false" layoutX="154.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="Q" textFill="WHITE" />
+            <JFXButton fx:id="button21112" cacheShape="false" focusTraversable="false" layoutX="185.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="R" textFill="WHITE" />
+            <JFXButton fx:id="button111112" cacheShape="false" focusTraversable="false" layoutX="340.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="W" textFill="WHITE" />
+            <JFXButton fx:id="button211111" cacheShape="false" focusTraversable="false" layoutX="278.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="U" textFill="WHITE" />
+            <JFXButton fx:id="button1111111" cacheShape="false" focusTraversable="false" layoutX="216.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="S" textFill="WHITE" />
+            <JFXButton fx:id="button1121" cacheShape="false" focusTraversable="false" layoutX="433.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="Z" textFill="WHITE" />
+            <JFXButton fx:id="button11211" cacheShape="false" focusTraversable="false" layoutX="433.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="35.0" prefWidth="28.0" text="M" textFill="WHITE" />
+            <Rectangle fx:id="notCurrentTurn" arcHeight="5.0" arcWidth="5.0" fill="#393939" height="99.0" layoutX="25.0" layoutY="179.0" opacity="0.68" stroke="BLACK" strokeType="INSIDE" width="472.0" />
+            <Label fx:id="notCurrentTurnText" layoutX="131.0" layoutY="193.0" text="Not your turn" textFill="WHITE">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane fx:id="failPane" prefHeight="345.0" prefWidth="514.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#424242" height="441.0" layoutX="-27.0" layoutY="-33.0" stroke="BLACK" strokeType="INSIDE" width="611.0" />
+            <JFXButton fx:id="playagain" cacheShape="false" focusTraversable="false" layoutX="165.0" layoutY="237.0" mnemonicParsing="false" onAction="#onPlay" text="Play Again" textFill="#19ff08">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="infoText" layoutX="161.0" layoutY="104.0" text="You Win" textFill="#20ff20">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="clientText" layoutX="75.0" layoutY="245.0" text="Only the host can restart" textFill="#20ff20" visible="false">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane fx:id="titlescreen" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#424242" height="431.0" layoutX="-50.0" layoutY="-38.0" stroke="BLACK" strokeType="INSIDE" width="622.0" />
+            <JFXButton fx:id="play" cacheShape="false" focusTraversable="false" layoutX="119.0" layoutY="196.0" mnemonicParsing="false" onAction="#onPlay" text="Play Singleplayer" textFill="#19ff08">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="168.0" layoutY="101.0" text="Hangman" textFill="WHITE">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="playmp" cacheShape="false" focusTraversable="false" layoutX="126.0" layoutY="253.0" mnemonicParsing="false" onAction="#multiplayerScreen" text="Play Multiplayer" textFill="#19ff08">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="multiplayerPane" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#424242" height="472.0" layoutX="-44.0" layoutY="-41.0" stroke="BLACK" strokeType="INSIDE" width="666.0" />
+            <Label layoutX="48.0" layoutY="63.0" text="Join or Create a Server" textFill="WHITE">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="joinServer" cacheShape="false" focusTraversable="false" layoutX="31.0" layoutY="249.0" mnemonicParsing="false" onAction="#joinServer" text="Join" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="createServer" cacheShape="false" focusTraversable="false" layoutX="355.0" layoutY="249.0" mnemonicParsing="false" onAction="#createServer" text="Create" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="connectionIP" labelFloat="true" layoutX="31.0" layoutY="206.0" prefHeight="25.0" prefWidth="463.0" promptText="Server IP (If joining)" style="-fx-text-fill: white;" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
